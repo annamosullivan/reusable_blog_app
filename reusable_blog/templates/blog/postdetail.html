@@ -10,8 +10,8 @@
 			<h3>{{ post.title }}</h3>
 			<div class="row">
 				{% if user.is_authenticated %}
-+			    	<a href="{% url 'edit_post' pk=post.pk %}" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></a>
-+               {% endif %}
+			    	<a href="{% url 'edit_post' pk=post.pk %}" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></a>
+               	{% endif %}
 				<div class="col-xs-9">
 					{% if post.image %}
 						<img src="{% get_media_prefix %}{{ post.image}}">
