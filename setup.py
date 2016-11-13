@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='reusable-blog-app',
-    version='1.0.7',
+    version='1.0.8',
     packages=['reusable_blog'],
     include_package_data=True,
     license='BSD License',  # example license
