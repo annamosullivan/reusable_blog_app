@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='reusable-blog-app',
-    version='1.0.11',
+    version='1.0.12',
     packages=['reusable_blog'],
     include_package_data=True,
     license='BSD License',  # example license
@@ -25,13 +25,14 @@ setup(
         'License :: OSI Approved :: BSD License',  # example license
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 2.6',
-    	'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 2.7',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
-    install_requires = [
+    install_requires=[
         'Pillow',
         'django_forms_bootstrap',
-	'Disqus',
+        'Disqus',
+        'django',
     ],
 )
