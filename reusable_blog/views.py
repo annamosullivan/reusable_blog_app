@@ -43,8 +43,3 @@ def edit_post(request, pk):
     else:
         form = BlogPostForm(instance=post)
     return render(request, 'blog/blogpostform.html', {'form': form})
-
-
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-    return render(request, "blog/blogtests.html", {'posts': posts})
