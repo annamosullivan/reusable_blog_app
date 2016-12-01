@@ -13,7 +13,7 @@ class Post(models.Model):
         app_label="reusable_blog"
 
 	# author is linked to a logged in user in the "auth_user" table
-    author = models.ForeignKey('accounts.User')
+    author = models.ForeignKey(settings.AUTH_USER_MODEL)
     title = models.CharField(max_length=200)
     content = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
